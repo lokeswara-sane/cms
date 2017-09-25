@@ -1,0 +1,12 @@
+.addon-custom {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #2998ca;
+    color: #fff;
+}
+
+.custom-div{
+    height: 50%;
+    margin-top: -50%;
+}
