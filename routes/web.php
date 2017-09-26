@@ -15,3 +15,9 @@ Route::get('/', [
     'as' => 'loginPage',
     'uses' => 'LoginController@showLogin'
 ]);
+
+
+Route::post('/login', [
+    'as' => 'doLogin',
+    'uses' => 'LoginController@attemptLogin'
+]);

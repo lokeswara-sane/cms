@@ -1,12 +1,78 @@
-.addon-custom {
+
+.addon-custom,.addon-blank {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
     background-color: #2998ca;
     color: #fff;
+    width: 50px;
+    font-size: 20px;
 }
 
-.custom-div{
-    height: 50%;
-    margin-top: -50%;
+.addon-blank {
+    background-color: #fff;
+    color: inherit;
+}
+
+.addon-blank:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: inherit;
+}
+
+#particles-js {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.login-form {
+    z-index: 1;
+}
+
+.user-input {
+    font-family: "Segoe UI";
+    font-size: 20px;
+    height: 55px;
+    margin-bottom: 5px;
+}
+
+.submit-button {
+    font-family: "Segoe UI";
+    font-size: 20px;
+    padding-top: 0px;
+    width: 100%;
+    border-radius: 0px;
+    background-color: #2998ca;
+    height: 55px;
+    margin-bottom: 5px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.site-logo {
+    margin-top: 12%;
+}
+
+.show-loader {
+    background-image: url(../images/loader.gif);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 97%;
 }

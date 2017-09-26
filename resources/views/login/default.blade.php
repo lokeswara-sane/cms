@@ -7,13 +7,11 @@
     {{Html::style('css/login.css')}}
 @endsection
 @section('body')
-
-    <div id="particles-js"></div>
-    <div class="col-md-12 custom-div">
-        <div class="row">
+    <div class="col-md-12">
+        <div class="row" style="margin-left: 2%">
             <div class="col-md-12">
-                <div>
-                    <h1 class="site-logo">Campuz</h1>
+                <div class="col-lg-push-4 col-md-4 site-logo">
+                    <img src="images\site-logo-dummy.png" alt="">
                 </div>
             </div>
             <div class="col-md-12">
@@ -21,23 +19,33 @@
                 <div class="col-md-4">
                     <div class="login-form">
                         <div class="form-group">
-                            <div class="input-group">
+                            {{Form::open(['url'=>route('doLogin'),'class'=>'loginForm'])}}
+                            <div class="input-group col-md-8 col-md-offset-1">
                                 <span class="input-group-addon addon-custom"><i class="fa fa-user-circle"
                                                                                 aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" placeholder="Username">
+                                {{Form::text('username','',(['placeholder'=>'Username','class'=>'form-control user-input']))}}
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="input-group">
+                            <div class="input-group col-md-8 col-md-offset-1">
                                 <span class="input-group-addon addon-custom"><i class="fa fa-key"
                                                                                 aria-hidden="true"></i></span>
-                                <input type="password" class="form-control" placeholder="Username">
+                                {{Form::password('username',(['placeholder'=>'Password','class'=>'form-control user-input']))}}
+                                <span class="input-group-addon addon-blank" title="Show password"><i class="fa fa-eye"
+                                                                                                     aria-hidden="true"></i></span>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="input-group col-md-8 col-md-offset-1">
+                                <button class="btn btn-primary submit-button">Login</button>
+                            </div>
+                        </div>
+                        {{Form::close()}}
                     </div>
                 </div>
                 <div class="col-md-4"></div>
             </div>
         </div>
     </div>
+    <div id="particles-js"></div>
 @endsection

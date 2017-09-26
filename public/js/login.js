@@ -1,3 +1,8 @@
-/**
- * Created by Lokesh on 25/09/2017.
- */
+$(document).ready(function () {
+
+    $('.loginForm').on('submit', function (e) {
+        e.preventDefault();
+    });
+
+
+});
