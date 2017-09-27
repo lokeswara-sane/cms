@@ -64,6 +64,7 @@ select:-webkit-autofill:focus {
     -webkit-text-fill-color: #000;
     -webkit-box-shadow: 0 0 0px 1000px #fff inset;
     transition: background-color 5000s ease-in-out 0s;
+    color:white;
 }
 
 .site-logo {
@@ -75,4 +76,49 @@ select:-webkit-autofill:focus {
     background-repeat: no-repeat;
     background-size: 10%;
     background-position: 97%;
+}
+
+.input-error{
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    margin-top: 0%;
+    background-color: #ff5f5f;
+    margin-left: 74%;
+    display: none;
+}
+
+.caret-right {
+    border-bottom: 13px solid transparent;
+    border-top: 13px solid transparent;
+    border-right: 13px solid;
+    display: inline-block;
+    height: 0;
+    color: #ff5f5f;
+    vertical-align: top;
+    margin-left: -5%;
+    width: 0;
+    margin-top: 10px;
+}
+
+.error-input-icon{
+    border: 1px solid #ff5f5f !important;
+    border-right:none !important;
+}
+
+.error-input-text{
+    border: 1px solid #ff5f5f !important;
+    border-left:none !important;
+}
+.username-error,.password-error{
+    color: #fff;
+    padding-left: 5%;
+    margin-top: -9%;
+    position: absolute;
+    font-size: 15px;
+    font-family:"Segoe UI light" ;
+}
+
+.password-error{
+    margin-top: 6%
 }
